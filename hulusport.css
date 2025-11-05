@@ -1,113 +1,225 @@
-        body {
-            background-color:black;
-            color:white;
-            margin:0;
-            padding: 0;
-        }
-        .top_header {
-            display: none;
-        }
+/* GLOBAL RESET */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;   /* ✅ Prevent global horizontal scroll */
+}
+.top_header {
+    display: none;
+}
 
-        .main_header {
-        background-color: #4CAE4E;
-        height:60px;
-        display: flex;
-        justify-content: space-between;
+/* ✅ MAIN HEADER stays full width, no color loss */
+.main_header {
+    background-color: #4CAE4E;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;           /* ✅ Covers entire screen */
+    position: relative;
+    z-index: 10;           /* ✅ Ensure it sits above everything */
+}
 
-        }
-        .main_header img {
-            height:100%;
-        }
-        .form_box {
-            display: flex;
-            align-items: center;
-            gap:20px;
-        }
-        .form_box button {
-            border: none;
-            background-color: #4CAE4E;
-            color:white;
-        }
-        .form_box img {
-            height:0px;
-            margin-right: 10px;
-        }
-        .form_box .phone_box {
-            display: flex;
-            background-color:white;
-           
-        }
-        .form_box .password-box {
-            display: flex;
-            background-color: white;
-        }
-        .header_desktop {
-            height:40px;
-            background-color: #4CAE4E;
-            display: flex;
-            justify-content: right;
-            align-items:end;
-            padding-right: 40px;
-            padding-bottom: -10px;
-        }
-        .header_desktop button {
-        background-color: #4CAE4E;
-        border: none;
-        color: white;
-        }
-        .header_desktop img {
-            height:50%;
-            
-        }
+.main_header img {
+    height: 100%;
+}
 
-        .second_header {
-            height :60px;
-            display: flex;
-            gap:40px;
-        }
-        .home_box {
-           display: flex;
-          justify-content: start;
-          align-items:start;
-           flex-direction: column;
-        }
-        .second_header img {
-            height:20px;
-        }
+/* ✅ Fix form box */
+.form_box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+.form_box img {
+    height: 20px;         /* ✅ Fix broken 0px height */
+}
+
+.form_box button {
+    border: none;
+    background-color: #4CAE4E;
+    color: white;
+}
+
+/* ✅ Phone & password inputs */
+.phone_box,
+.password-box {
+    display: flex;
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* ✅ SECOND HEADER — horizontal scroll bar ONLY here */
+.second_header {
+    height: 70px;
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    overflow-x: auto;       /* ✅ Horizontal scroll enabled */
+    overflow-y: hidden;
+    white-space: nowrap;    /* ✅ Keep items in one line */
+    background-color: black;
+    width: 100%;
+}
+.search_box {
+    margin-left: auto;
+}
+
+/* Hide vertical scrollbar, show horizontal only */
+.second_header::-webkit-scrollbar {
+    height: 7px;            /* ✅ This creates the bottom scrollbar */
+}
+
+.second_header::-webkit-scrollbar-track {
+    background:white;
+}
+
+.second_header::-webkit-scrollbar-thumb {
+    background:silver;   /* ✅ Green scrollbar to match theme */
+    border-radius: 10px;
+}
 
 
 
-        @media only screen and (max-width:768px) {
-            .top_header {
-            display: flex;
-            justify-content: space-between;
-         
-        }
-        .top_img {
-        height:50px;  
-        }
-        .top_contents {
-            display: flex;
-            gap:30px;
-        }
-        .top_header button {
-            background-color: #4CAE4E;
-            color:white;
-            height:40px;
-            border-radius: 30%;
-        }
-        .experience_box {
-            display: flex;
-            flex-direction: column;
-        }
+.second_header img {
+    height: 20px;
+}
 
-        .header_desktop {
-            display: none;
-        }
+.new {
+    background-color: red;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 10px;
+}
 
-        .form_box .password-box,.form_box .phone_box {
-            display: none;
-        }
+/* ✅ Desktop top header */
+.header_desktop {
+    height: 40px;
+    background-color: #4CAE4E;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
 
-        }
+.header_desktop button {
+    background-color: #4CAE4E;
+    border: none;
+    color: white;
+}
+
+.header_desktop img {
+    height: 50%;
+}
+.home_box {
+    display: flex;
+    align-items: center;
+}
+.banner_box{
+    width:100%;
+   
+}
+.banner_box img {
+    width: 100%;
+   
+}
+
+.main_box {
+        display: grid;
+    
+    grid-template-columns: 1fr 3fr 1fr; 
+    width: 100%;
+    gap: 10px;
+
+}
+.side_box {
+    display: flex;
+    flex-direction: column;
+}
+.side_box img {
+    height:80px;
+}
+.side_box .hide_box {
+    background-color: rgb(52, 60, 64);
+}
+.side_box .top_side {
+    display: flex;
+   
+}
+.side_box .experience_box {
+    display: flex;
+    flex-direction: column;
+   
+}
+.side_box .experience_box button {
+    background-color: #4CAE4E;
+    padding: 3px;
+    border-radius: 20px;
+    color: white;
+}
+.side_box .hide_box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 20px;
+}
+.side_box .hide_box .hide_text {
+     
+}
+.side_box .id_box  {
+    background-color:rgba(0, 0, 0, 0.316) ;
+    
+}
+.id_box input {
+    width: 75%;
+ padding:10px 0;
+}
+.id_box button {
+    width: 22%;
+    padding:10px 5px;
+    background-color: #4CAE4E;
+    color: white;
+}
+
+/* ✅ Mobile */
+@media only screen and (max-width: 768px) {
+    .header_desktop {
+        display: none;
+    }
+
+    .form_box .password-box,
+    .form_box .phone_box {
+        display: none;
+    }
+    .top_header {
+    display: flex;
+    justify-content: space-between;
+    height:70px;
+}
+.top_contents {
+    display: flex;
+}
+.experience_box {
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.btn {
+    background-color: #4CAE4E;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.home_box {
+    display: inline-flex;   /* ✅ Important for horizontal scroll */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.more {
+    display: none;
+}
+}
