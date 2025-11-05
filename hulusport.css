@@ -1,4 +1,7 @@
 /* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -138,6 +141,7 @@ body, html {
 .side_box {
     display: flex;
     flex-direction: column;
+    gap:4px;
 }
 .side_box img {
     height:80px;
@@ -166,9 +170,7 @@ body, html {
     align-items: center;
     padding-top: 20px;
 }
-.side_box .hide_box .hide_text {
-     
-}
+
 .side_box .id_box  {
     background-color:rgba(0, 0, 0, 0.316) ;
     
@@ -182,6 +184,35 @@ body, html {
     padding:10px 5px;
     background-color: #4CAE4E;
     color: white;
+}
+.download_box {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+      width: 98%;
+    height: 40px;
+    background-color: #4CAE4E;
+}
+.download_box img {
+    height: 60%;
+}
+.download_box span {
+    padding-left: 5px;
+}
+.leagues_box {
+     background-color: rgb(52, 60, 64);
+    display: flex;
+    align-items: center;
+    gap:10px;
+    height: 50px;
+    width:100%;
+}
+.leagues_box img {
+    height:30px;
+}
+.leagues_box .item_end {
+  margin-left: auto;
+  padding-right: 5px;
 }
 
 /* ✅ Mobile */
