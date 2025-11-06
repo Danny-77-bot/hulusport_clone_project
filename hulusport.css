@@ -205,7 +205,8 @@ body, html {
     padding-left: 5px;
 }
 .leagues_box {
-     background-color: rgb(52, 60, 64);
+    
+      background-color: rgba(229, 231, 235, 0.214);
     display: flex;
     align-items: center;
     gap:10px;
@@ -213,7 +214,9 @@ body, html {
     width:100%;
 }
 .leagues_box img {
+     width:20px;
     height:20px;
+    object-fit: cover;
 }
 .leagues_box .item_end {
   margin-left: auto;
@@ -223,7 +226,7 @@ body, html {
 }
 
 .leagues_item {
-    background-color: rgb(52, 60, 64);
+    background-color:rgb(52, 60, 64);
     color:white;
     border: none;
     width:100%;
@@ -234,8 +237,9 @@ body, html {
     align-items: center;
 }
 .leagues_item img {
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
+    
     border-radius: 50%;
     padding:2px 5px;
 }
@@ -276,6 +280,13 @@ body, html {
     justify-content: center;
 }
 .more {
+    display: none;
+}
+
+.side_box {
+    display: none;
+}
+.left_box {
     display: none;
 }
 }
