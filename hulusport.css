@@ -1,10 +1,11 @@
 /* GLOBAL RESET */
 * {
   box-sizing: border-box;
+   margin: 0;
+    padding: 0;
 }
 body, html {
-    margin: 0;
-    padding: 0;
+   
     background-color: black;
     color: white;
     overflow-x: hidden;   /* ✅ Prevent global horizontal scroll */
@@ -148,6 +149,7 @@ body, html {
 }
 .side_box .hide_box {
     background-color: rgb(52, 60, 64);
+    width: 100%;
 }
 .side_box .top_side {
     display: flex;
@@ -166,30 +168,33 @@ body, html {
 }
 .side_box .hide_box {
     display: flex;
+    width: 100%;
     justify-content: end;
     align-items: center;
     padding-top: 20px;
 }
 
 .side_box .id_box  {
-    background-color:rgba(0, 0, 0, 0.316) ;
-    
+    background-color:red;
+    display: flex;
+    width: 100%;
 }
 .id_box input {
-    width: 75%;
+    width: 85%;
  padding:10px 0;
 }
 .id_box button {
-    width: 22%;
+   
     padding:10px 5px;
     background-color: #4CAE4E;
     color: white;
+    width:auto;
 }
 .download_box {
     display: flex;
     justify-content:center;
     align-items: center;
-      width: 98%;
+    width: 100%;
     height: 40px;
     background-color: #4CAE4E;
 }
@@ -208,11 +213,31 @@ body, html {
     width:100%;
 }
 .leagues_box img {
-    height:30px;
+    height:20px;
 }
 .leagues_box .item_end {
   margin-left: auto;
   padding-right: 5px;
+  font-size: 30px;
+  
+}
+
+.leagues_item {
+    background-color: rgb(52, 60, 64);
+    color:white;
+    border: none;
+    width:100%;
+    height:40px;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+}
+.leagues_item img {
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    padding:2px 5px;
 }
 
 /* ✅ Mobile */
