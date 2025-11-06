@@ -244,6 +244,142 @@ body, html {
     padding:2px 5px;
 }
 
+
+.center_box {
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.center_box .option_box {
+   background-color:rgb(52, 60, 64);
+    height:40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.option_box img {
+    width:25px;
+    height:25px;
+    border-radius: 60%;
+}
+.option_box .option_box1 {
+    background-color: whitesmoke;
+    width: 200px;
+    height:30px;
+    margin-left: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.option_box .option_box1 img {
+    padding:2px 8px;
+}
+.option_box .option_box1 .mark {
+    margin-left: auto;
+    padding-right: 10px;
+}
+.option_box .option_box2 {
+    display: flex;
+}
+
+.days_box {
+    height:50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(229, 231, 235, 0.214);
+
+}
+  .days_box .days_items {
+    background-color: black;
+    height:30px;
+    display: flex;
+   gap:9px;
+   align-items: center;
+}
+.days_items img {
+    height:30px;
+}
+
+.chance_header {
+     background-color: rgba(229, 231, 235, 0.214);
+      height:50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more {
+
+    margin-right: 15px;
+}
+.home_team {
+    margin-left:30%;
+}
+.odd_boxes {
+         background-color: rgba(229, 231, 235, 0.214);
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+}
+.odd_boxes img {
+    height:20px;
+    width:auto;
+}
+.odd_box1 {
+    display: flex;
+    align-items: center;
+}
+.odd_box1 img {
+    padding: 2px 5px;
+}
+
+.odd_club_boxes {
+    background-color:  rgba(229, 231, 235, 0.214);
+    height:50px;
+    display: grid;
+    grid-template-columns: 120px 2fr 50px 2fr 50px;
+      align-items: center; /* Centers items vertically */
+      column-gap: 20px;
+      padding: 0 15px;
+}
+.club_box1 {
+    background-color:rgb(74, 90, 99);
+    padding:5px 10px;
+}
+.club_box2 {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px;
+}
+.club_box_draw {
+    background-color: black;
+    padding:5px 10px;
+}
+.club_more {
+    background-color: steelblue;
+}
+.end_box {
+    background-color:  rgba(229, 231, 235, 0.214);;
+    display: flex;
+   justify-content: center;
+    height:50px;
+    width:100%;
+}
+.end_box div {
+    height:40px;
+    width:40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin:4px 10px;
+    padding: 2px auto;;
+}
+.end_box .page_div {
+    width:70px;
+}
 /* ✅ Mobile */
 @media only screen and (max-width: 768px) {
     .header_desktop {
@@ -288,5 +424,15 @@ body, html {
 }
 .left_box {
     display: none;
+}
+.center_box {
+    width:100vw;
+    padding: 0 10px;
+}
+.banner_box {
+    height:200px;
+}
+.banner_box img {
+    height:100%;
 }
 }
