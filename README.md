@@ -33,8 +33,8 @@ Media Queries
 
 📁 Project Structure
 /hulusport-clone
-│── index.html
-│── style.css
+│── hulusport.html
+│── hulusport.css
 │── /images
 └── README.md
 
@@ -85,7 +85,7 @@ Daniel Melaku
 📧 Email:danielmelaku061@gmail.com
 🌐 GitHub: https://github.com/Danny-77-bot/hulusport_clone_project
 
-<img width="1920" height="1020" alt="hulusport - Google Chrome 11_7_2025 11_01_54 PM" src="https://github.com/user-attachments/assets/4f4e2f6a-472c-4192-81de-a08c340c4a28" />
-<img width="1900" height="849" alt="hulusport - Google Chrome 11_7_2025 11_01_55 PM" src="https://github.com/user-attachments/assets/2f36acb6-6cb3-4ef2-8876-e14e69d94e75" />
-<img width="1900" height="870" alt="hulusport - Google Chrome 11_7_2025 11_01_59 PM" src="https://github.com/user-attachments/assets/accc01ec-6c39-47a8-9efa-e6ac4036ab6c" />
-<img width="958" height="780" alt="hulusport - Google Chrome 11_7_2025 11_02_23 PM" src="https://github.com/user-attachments/assets/4faf3341-3d25-4415-9fe8-d475192dd72e" />
+<img width="1912" height="874" alt="image1" src="https://github.com/user-attachments/assets/9953d3b4-9965-43ce-a4b5-d8d40dbdcadb" />
+
+<img width="958" height="782" alt="image2" src="https://github.com/user-attachments/assets/4e52aaa9-9ec5-4e57-bf7f-813323a00dfb" />
+<img width="1920" height="859" alt="image3" src="https://github.com/user-attachments/assets/3e04562b-768a-42b3-b032-0d724813f88c" />
