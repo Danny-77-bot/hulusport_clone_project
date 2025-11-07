@@ -3,6 +3,7 @@
   box-sizing: border-box;
    margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 body, html {
    
@@ -363,7 +364,7 @@ body, html {
     background-color: steelblue;
 }
 .end_box {
-    background-color:  rgba(229, 231, 235, 0.214);;
+    background-color:  rgba(229, 231, 235, 0.214);
     display: flex;
    justify-content: center;
     height:50px;
@@ -383,6 +384,106 @@ body, html {
 .end_box .page_div {
     width:70px;
 }
+.left_box {
+    display: flex;
+    flex-direction: column;
+}
+.slip_box {
+    display: grid;
+    gap:5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.slip_item {
+    background-color:rgba(229, 231, 235, 0.214) ;
+    height:32px;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.slip_item1 {
+    background-color: #4CAE4E;
+    
+}
+
+.selected_slip_box {
+    height:190px;
+    background-color: rgb(52, 60, 64);
+}
+.selected_slip_box img {
+    height:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
+}
+.selected_slip_box span {
+    margin:5px 15px;
+  
+}
+.selected_slip_box h3 {
+    margin: 5px 30px;
+}
+.selected_slip_box hr {
+    margin-top: 30px;
+}
+.coupon_box {
+    background-color: rgb(52, 60, 64);
+    height: 100px;
+}
+.coupon_item {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+.coupon_item input   {
+    padding: 2px;
+    height:40px;
+}
+.coupon_item button {
+    background-color: #4CAE4E;
+    color:white;
+}
+
+.coupon_check {
+    background-color: rgba(229, 231, 235, 0.214);
+    height: 110px;
+}
+.coupon_text {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+.coupon_text .text1 {
+   padding:20px 2px;
+}
+ .coupon_inputs  {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+      color:white;
+ }
+ .coupon_inputs input {
+    height:40px;
+ }
+ .coupon_inputs button {
+     color:white;
+     background-color: #4CAE4E;
+ }
+ .left_side_images {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+ }
+ .left_side_images img {
+    width:100%;
+ }
+ .footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
 /* ✅ Mobile */
 @media only screen and (max-width: 768px) {
     .header_desktop {
