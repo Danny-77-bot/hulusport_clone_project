@@ -76,7 +76,7 @@ button {
     cursor:pointer;
 }
 .second_header span:hover {
-     color: rgb(0, 110, 255);
+     color: blue;
 }
 .search_box {
     margin-left: auto;
@@ -408,6 +408,19 @@ button {
     text-align: center;
     padding: 5px 20px;
 }
+.slip_item:hover {
+    background-color: #4CAE4E;
+}
+.odd_club_boxes span:hover {
+    background-color: #4CAE4E;
+}
+.leagues_item:hover {
+    background-color:black;
+}
+.leagues_box:hover {
+    background-color: black;
+}
+
 
 .slip_item1 {
     background-color: #4CAE4E;
