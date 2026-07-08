@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daniel Melaku | MERN Developer</title>
+
+<link rel="stylesheet" href="one.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="header">
+
+<div class="logo">
+Daniel<span>.</span>
+</div>
+
+
+<nav class="navbar">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<button id="theme-toggle">
+
+</button>
+
+
+<button id="menu-btn">
+
+</button>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+
+<h1>
+Hi, I'm <span>Daniel Melaku</span>
+</h1>
+
+
+<h2>
+I'm a <span id="typing"></span>
+</h2>
+
+
+<p>
+
+I build modern, responsive and user-friendly
+full-stack web applications using
+MongoDB, Express.js, React.js and Node.js.
+
+</p>
+
+
+<div class="buttons">
+
+
+<a href="#projects">
+View Projects
+</a>
+
+
+<a href="#contact">
+Contact Me
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<img src="images/profile.jpeg"
+alt="profile">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about" class="section">
+
+
+<h2>
+About Me
+</h2>
+
+
+<div class="card">
+
+
+<p>
+
+I am a MERN Stack developer passionate about
+creating scalable applications, clean UI designs,
+and solving real-world problems with technology.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SKILLS -->
+
+
+<section id="skills" class="section">
+
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>HTML5</span>
+                <span>95%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>CSS3</span>
+                <span>90%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress javascript"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>React.js</span>
+                <span>85%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress react"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Node.js</span>
+                <span>80%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress node"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>MongoDB</span>
+                <span>80%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress mongodb"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS -->
+
+
+<section id="projects" class="section">
+
+    <h2>Projects</h2>
+
+    <!-- Filter Buttons -->
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="html">
+            HTML & CSS
+        </button>
+
+        <button class="filter-btn" data-filter="javascript">
+            JavaScript
+        </button>
+
+        <button class="filter-btn" data-filter="mern">
+            MERN
+        </button>
+
+    </div>
+    
+  <div class="search-container">
+
+    <input
+        type="text"
+        id="project-search"
+        placeholder="Search projects...">
+
+</div>  
+
+    <!-- Projects -->
+
+    <div class="grid">
+
+        <div class="project card" data-category="html">
+
+            <h3>Portfolio Website</h3>
+
+            <p>Responsive portfolio built using HTML and CSS.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+        <div class="project card" data-category="javascript">
+
+            <h3>Movie Website</h3>
+
+            <p>Interactive movie browsing application.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+        <div class="project card" data-category="mern">
+
+            <h3>E-Commerce Platform</h3>
+
+            <p>Full Stack MERN online shopping application.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+        <div class="project card" data-category="javascript">
+
+            <h3>Task Manager</h3>
+
+            <p>JavaScript task management application.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+        <div class="project card" data-category="html">
+
+            <h3>Landing Page</h3>
+
+            <p>Modern responsive landing page.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+        <div class="project card" data-category="mern">
+
+            <h3>Blog Application</h3>
+
+            <p>Blog platform built with the MERN Stack.</p>
+
+            <a href="#">View Project</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact" class="section">
+
+
+<h2>
+Contact
+</h2>
+
+
+
+<form>
+
+
+<input 
+placeholder="Name">
+
+
+
+<input
+placeholder="Email">
+
+
+
+<textarea
+placeholder="Message">
+</textarea>
+
+
+
+<button>
+Send Message
+</button>
+
+
+
+</form>
+
+
+
+</section>
+
+<!-- BACK TO TOP BUTTON -->
+
+<button id="backToTop" title="Back to Top">
+    
+</button>
+
+<footer>
+
+
+<p>
+
+© 2026 Daniel Melaku | MERN Developer
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
